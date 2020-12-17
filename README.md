@@ -1,10 +1,14 @@
 # NlP Homework 12
 
+# Warning: This Jupyter Notebook attached to this homework in extensively long because I read in the entire text of the article using the url, not just the abbreviated text provided by News API.
+
 ## News Headlines Sentiment
 
-After using the NewsAPI to read in the top headlines for both Bitcoin and Ethereum we were able to read this information into a pandas DataFrame. This subsequently allowed us to conduct sentiment analysis on the text of the articles using the SentimentIntensityAnalyzer() function and ammending the DataFrame to contain these scores. 
+In this section we used the News API to call in artilce information for the most recent news associated with bitcoin and euthereum. This data pull, however, only provided us with an abbreviated version of the content of the article. To get the full article, I created a function (text_scrapper) that leveraged the url provided by the API to get the content of the article. Using this function, we were able to save the full text information, and other aspects of the article, in a DataFrame. 
 
-We were then able to determine that bitcoin had a slightly higher mean positive score with 0.07 compared to the 0.04 score for ethereum. Also, ethereum had the highest compound score with 0.877 when compared to Bitcoin, which maxed out at only 0.801. Finally, ethereum also had the highest positive score with a 0.318.
+Using this DataFrame, we were able to conduct sentiment analysis on the text of the articles using the SentimentIntensityAnalyzer() function and ammending the DataFrame to contain these scores. 
+
+We were then able to determine that ethereum has a slightly higher mean positive score with 0.0967 compared to the 0.0935 score for bitcoin. Ethereum had the highest compound score with 0.999 when compared to Bitcoin, which maxed out slightly behind at 0.998. Ethereum also had the highest positive score with a 0.217.
 
 ## Tokenizer
 
@@ -22,4 +26,3 @@ Similar to the ngrams section, the word clouds section allows us to visualize th
 
 After concatenating the text for each of the articles for the individual crypto currencies, we were then able to apply the name entity recognition platform from the spacy library to identify the places, organizations and people, among other classifications, in the text.
 
-## 
