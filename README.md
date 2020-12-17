@@ -1,4 +1,4 @@
-# NlP Homework 12
+# NlP Homework 12 12/17/2020
 
 # Warning: This Jupyter Notebook attached to this homework in extensively long because I read in the entire text of the article using the url, not just the abbreviated text provided by News API.
 
